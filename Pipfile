@@ -9,6 +9,7 @@ python-dotenv = "*"
 html2text = "*"
 openai = "*"
 pinecone-client = "*"
+streamlit = "*"
 
 [dev-packages]
 
