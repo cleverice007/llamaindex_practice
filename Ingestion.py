@@ -13,17 +13,17 @@ from llama_index import (
 from llama_index.vector_stores import PineconeVectorStore
 import pinecone
 
-
 load_dotenv()
 pinecone.init(
     api_key=os.environ["PINECONE_API_KEY"],
     environment=os.environ["PINECONE_ENVIRONMENT"],
 )
+
 if __name__ == "__main__":
     print("Going to ingest pinecone documentation...")
     UnstructuredReader = download_loader("UnstructuredReader")
     dir_reader = SimpleDirectoryReader(
-        input_dir="./llamaindex-docs",
+        input_dir="./llamindex-docs",
         file_extractor={".html": UnstructuredReader()},
     )
     documents = dir_reader.load_data()
@@ -35,7 +35,7 @@ if __name__ == "__main__":
         llm=llm, embed_model=embed_model, node_parser=node_parser
     )
 
-    index_name = "llamaindex-documentation-helper"
+    index_name = "llamaindex-practice"
     pinecone_index = pinecone.Index(index_name=index_name)
     vector_store = PineconeVectorStore(pinecone_index=pinecone_index)
     storage_context = StorageContext.from_defaults(vector_store=vector_store)
