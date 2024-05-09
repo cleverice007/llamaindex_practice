@@ -27,11 +27,10 @@
    git clone https://github.com/yourgithub/llamaindex_practice.git
    cd llamaindex_practice
    pip install pipenv
+   pipenv run streamlit run main.py
 2. **environment variable**
 ```bash
    PINECONE_API_KEY=your_pinecone_api_key
    PINECONE_ENVIRONMENT=your_pinecone_environment
-3.
-```bash
-   pipenv run streamlit run main.py
+
 
