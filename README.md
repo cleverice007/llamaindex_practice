@@ -1,5 +1,5 @@
 # LlamaIndex Practice
-![Application Image1]((https://github.com/cleverice007/llamaindex_practice/blob/main/截圖%202024-05-09%20上午10.41.20.png))
+![Application Image1](https://github.com/cleverice007/llamaindex_practice/blob/main/截圖%202024-05-09%20上午10.41.20.png)
 
 
 ## description
