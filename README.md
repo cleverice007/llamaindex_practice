@@ -1,4 +1,6 @@
 # LlamaIndex Practice
+![Application Image1](截圖 2024-05-09 上午10.41.20.png)
+
 
 ## description
 `llamaindex_practice` 是一個使用 Python 開發的項目，使用LlamaIndex 的網頁資料打造了一個 retrieval augmented generation (RAG) 應用。此項目將數據存儲到 Pinecone（一種向量數據庫），街上
